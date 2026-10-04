@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriVision X1 — AI Smart Agriculture Drone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <div class="brand"><span class="dot"></span> AGRIVISION <b>X1</b></div>
+    <div class="status"><span></span> AI SYSTEM ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="copy">
+        <p class="eyebrow">NEXT-GEN PRECISION AGRICULTURE</p>
+        <h1>Farms,<br><em>seen smarter.</em></h1>
+        <p class="lead">An autonomous AI drone designed to monitor crops, detect stress and help farmers make faster decisions.</p>
+        <div class="actions">
+          <button id="scanBtn">RUN AI SCAN</button>
+          <button class="ghost" id="infoBtn">EXPLORE SYSTEM</button>
+        </div>
+        <div class="metrics">
+          <div><strong>98.4%</strong><span>Detection accuracy</span></div>
+          <div><strong>45 min</strong><span>Flight time</span></div>
+          <div><strong>12 ha</strong><span>Coverage / flight</span></div>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-label">LIVE 3D PRODUCT VIEW</div>
+        <div id="scene"></div>
+        <div class="hint">DRAG TO ROTATE · SCROLL / PINCH TO ZOOM · AUTO ROTATE</div>
+        <div class="scan-line"></div>
+        <div class="ring ring1"></div><div class="ring ring2"></div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-title">
+        <p class="eyebrow">INTELLIGENCE LAYER</p>
+        <h2>One drone. Four smart systems.</h2>
+      </div>
+      <div class="cards">
+        <article class="card" data-title="AI Crop Vision" data-text="Multispectral-style analysis identifies crop stress, nutrient problems and unusual growth patterns.">
+          <span>01</span><h3>AI Crop Vision</h3><p>Spot crop stress before it becomes a bigger problem.</p><button>VIEW →</button>
+        </article>
+        <article class="card" data-title="Precision Irrigation" data-text="Maps dry zones and gives farmers targeted irrigation insights instead of treating every part of a field equally.">
+          <span>02</span><h3>Smart Irrigation</h3><p>Use field data to guide water where it matters.</p><button>VIEW →</button>
+        </article>
+        <article class="card" data-title="Field Mapping" data-text="Create aerial field maps and compare crop zones for faster scouting and planning.">
+          <span>03</span><h3>Field Mapping</h3><p>Turn a large farm into an easy-to-read digital map.</p><button>VIEW →</button>
+        </article>
+        <article class="card" data-title="Weather Intelligence" data-text="Combine local weather observations with flight planning to help schedule safer and more useful missions.">
+          <span>04</span><h3>Weather AI</h3><p>Plan missions around changing field conditions.</p><button>VIEW →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="specs">
+      <div><small>MISSION RANGE</small><strong>8 KM</strong></div>
+      <div><small>MAX ALTITUDE</small><strong>120 M</strong></div>
+      <div><small>TAKE-OFF</small><strong>AUTO</strong></div>
+      <div><small>AI CORE</small><strong>VISION v2</strong></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box"><button class="close" id="close">×</button><p class="eyebrow">SYSTEM MODULE</p><h2 id="modalTitle"></h2><p id="modalText"></p></div>
+  </div>
+  <div class="toast" id="toast">AI scan complete — 3 crop zones flagged for review.</div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
